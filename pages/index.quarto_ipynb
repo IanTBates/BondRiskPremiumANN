@@ -1,0 +1,58 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "title: \"Bond Risk Premium ANN\"\n",
+        "jupyter: python3\n",
+        "---"
+      ],
+      "id": "1719511a"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import datetime\n",
+        "today = datetime.date.today()\n",
+        "today = today.strftime(\"%B %d, %Y\")"
+      ],
+      "id": "87963e2b",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "This is a project by Ian Bates last updated  `{python} today`.\n",
+        "\n",
+        "\n",
+        "## Introduction\n",
+        "\n",
+        "\n",
+        "## Modeling\n",
+        "\n",
+        "\n",
+        "## Report\n",
+        "\n",
+        "\n",
+        "## Presentation"
+      ],
+      "id": "6292d18b"
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "python3",
+      "language": "python",
+      "display_name": "Python 3 (ipykernel)",
+      "path": "C:\\Users\\Iantb\\Documents\\GitHub\\BondRiskPremiumANN\\.venv\\share\\jupyter\\kernels\\python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}
