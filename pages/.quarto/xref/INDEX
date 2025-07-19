@@ -1,0 +1,20 @@
+{
+  "about.qmd": {
+    "about.html": "0287c2a2"
+  },
+  "index.qmd": {
+    "index.html": "3e91dd79"
+  },
+  "how.qmd": {
+    "how.html": "2b77b065"
+  },
+  "presentation.qmd": {
+    "presentation.html": "8d621899"
+  },
+  "report.qmd": {
+    "report.html": "84438656"
+  },
+  "shinyapp.qmd": {
+    "shinyapp.html": "ee2fbf54"
+  }
+}
