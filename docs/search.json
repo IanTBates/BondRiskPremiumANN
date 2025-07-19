@@ -2,15 +2,71 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "pages",
+    "title": "Bond Risk Premium ANN",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "This is a project by Ian Bates last updated July 18, 2025."
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site"
+    "text": "This site serves as a central platform for accessing all components of this project: Modeling App, PDF Report, and Presentation."
+  },
+  {
+    "objectID": "how.html",
+    "href": "how.html",
+    "title": "How",
+    "section": "",
+    "text": "This is a Quarto website.\n\nReferences\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\nThe project used tensorflow for the ANN modeling, https://www.tensorflow.org/tutorials/keras/regression.\nThe projcet used the shiny posit package in python to code the modeling application https://shiny.posit.co/r/getstarted/shiny-basics/lesson1/.\nUsed Quarto for writing the report https://quarto.org/docs/output-formats/pdf-basics.html and https://github.com/nmfs-opensci/quarto_titlepages/blob/main/README.md.\n\n\nData Sources\n\nBloomberg\nFRED Economic Data\n\n\n\nPackages\n\nnumpy\npandas\nshiny\ntensorflow"
+  },
+  {
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
+    "title": "Bond Risk Premium ANN",
+    "section": "Introduction",
+    "text": "Introduction"
+  },
+  {
+    "objectID": "index.html#modeling",
+    "href": "index.html#modeling",
+    "title": "Bond Risk Premium ANN",
+    "section": "Modeling",
+    "text": "Modeling"
+  },
+  {
+    "objectID": "index.html#report",
+    "href": "index.html#report",
+    "title": "Bond Risk Premium ANN",
+    "section": "Report",
+    "text": "Report"
+  },
+  {
+    "objectID": "index.html#presentation",
+    "href": "index.html#presentation",
+    "title": "Bond Risk Premium ANN",
+    "section": "Presentation",
+    "text": "Presentation"
+  },
+  {
+    "objectID": "shinyapp.html",
+    "href": "shinyapp.html",
+    "title": "Shiny App",
+    "section": "",
+    "text": "A modeling tool that uses shiny and tensorflow."
+  },
+  {
+    "objectID": "presentation.html",
+    "href": "presentation.html",
+    "title": "Presentation",
+    "section": "",
+    "text": "The presentaion will be done in quarto… maybe."
+  },
+  {
+    "objectID": "report.html",
+    "href": "report.html",
+    "title": "Report",
+    "section": "",
+    "text": "This will be done in quart using the example in the repo."
   }
 ]

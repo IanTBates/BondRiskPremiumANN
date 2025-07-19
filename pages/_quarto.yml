@@ -2,12 +2,17 @@ project:
   type: website
   output-dir: ../docs
 website:
-  title: "pages"
+  title: "Bond Risk Premium ANN"
   navbar:
     left:
       - href: index.qmd
         text: Home
+      - shinyapp.qmd
+      - report.qmd
+      - presentation.qmd
       - about.qmd
+      - how.qmd
+
 
 format:
   html:
