@@ -5,13 +5,12 @@ import pandas as pd
 
 from shiny import App, render, ui
 from shinywidgets import output_widget, render_widget 
-import plotly.express as px
-from palmerpenguins import load_penguins
+
 
 class yielddashboard:
-    def yielddashboard(self):
+    def __init__(self):
         #x = 20
-        penguins = load_penguins()
+        pass
 
 
 
