@@ -1,30 +1,30 @@
 
-import numpy as np
+#import numpy as np
 import pandas as pd
 
 import plotly.express as px
-
-import matplotlib as mpl
-import matplotlib.pyplot as plt
-import numpy as np
 
 import shiny
 
 from shiny import App, render, ui, reactive
 from shinywidgets import output_widget, render_widget, render_plotly
 
-import time_series_regression as tsr
+#import time_series_regression as tsr
 
-import tensorflow as tf
+import os
 
-from tensorflow import keras
-from tensorflow.keras import layers
+app_dir = os.path.dirname(os.path.abspath(__file__))
+data_path1 = os.path.join(app_dir, 'bloomberg_values.csv')
+data_path2 = os.path.join(app_dir, 'transformed_econ_df.csv')
+data_path3_1 = os.path.join(app_dir, 'Bonds list.xlsx')
+data_path3_2 = os.path.join(app_dir, 'Bonds list.xlsx')
+model_results_path = os.path.join(app_dir, 'model_results.csv')
 
-dataset1 = pd.read_csv("bloomberg_values.csv")
-dataset2 = pd.read_csv("transformed_econ_df.csv")
-dataset3_1 = pd.read_excel("Bonds list.xlsx", sheet_name="SelectedIDs(Values)")
-dataset3_2 = pd.read_excel("Bonds list.xlsx", sheet_name="PricesTable(Values)")
-
+dataset1 = pd.read_csv(data_path1)
+dataset2 = pd.read_csv(data_path2)
+dataset3_1 = pd.read_excel(data_path3_1, sheet_name="SelectedIDs(Values)")
+dataset3_2 = pd.read_excel(data_path3_2, sheet_name="PricesTable(Values)")
+model_results = pd.read_csv(model_results_path)
 #rsconnect add --account <ACCOUNT> --name <NAME> --token <TOKEN> --secret <SECRET>
 #rsconnect deploy shiny C:\Users\Iantb\Documents\GitHub\BondRiskPremiumANN\shiny --name iantbates --title my-app
 
@@ -38,24 +38,17 @@ datasets = {
 data = reactive.Value()
 date_column = reactive.Value()
 
-eval_metrics = {
-    "Mean Absolute Error": tf.keras.metrics.MeanAbsoluteError(),
-    "Mean Absolute Percentage Effor":  tf.keras.metrics.MeanAbsolutePercentageError(),
-    "Mean Squeared Error":  tf.keras.metrics.MeanSquaredError()
-}
-
-"""model_choices = {
-    "Linear Model": tsr.get_linear_model(input.target_columns(), input.predictor_columns()), 
-    "Dense Model 1": tsr.get_dense_model1(input.target_columns(), input.predictor_columns()), 
-    "Dense Model 2": tsr.get_dense_model2(input.target_columns(), input.predictor_columns()), 
-    "Dense Model 3": tsr.get_dense_model3(input.target_columns(), input.predictor_columns()), 
-}"""
-
 model_choices = {
     "Linear Model": 1, 
     "Dense Model 1": 2, 
     "Dense Model 2": 3, 
     "Dense Model 3": 4, 
+}
+
+eval_metrics = {
+    "MAE": 1,
+    "MAPE": 2,
+    "MSE": 3
 }
 
 # UI
@@ -200,7 +193,7 @@ def server(input, output, session):
     @output
     @render_widget
     def results_plot():
-        df = pd.read_csv("model_results.csv")
+        df = model_results
 
         x_col = "Date"
         y_cols = ["y_actual 1", "y_predict 1"]  # Replace with your actual column names
