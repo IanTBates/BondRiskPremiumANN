@@ -7,14 +7,14 @@ from shiny import App, render, ui
 from shinywidgets import output_widget, render_widget 
 
 
-class yielddashboard:
+
+class ANNDashboard:
     def __init__(self):
-        #x = 20
         pass
 
 
 
-    def page(self):
+    def ui(self):
         page_contents = ui.page_fluid(
             ui.card(
                 ui.card_header("Yields and stuff1"),

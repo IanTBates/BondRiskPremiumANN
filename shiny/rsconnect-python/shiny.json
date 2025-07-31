@@ -1,0 +1,12 @@
+{
+    "https://api.shinyapps.io": {
+        "server_url": "https://api.shinyapps.io",
+        "filename": "C:\\Users\\Iantb\\Documents\\GitHub\\BondRiskPremiumANN\\shiny",
+        "app_url": "https://iantbates.shinyapps.io/my-app-test/",
+        "app_id": "15145667",
+        "app_guid": null,
+        "title": "my-app-test",
+        "app_mode": "python-shiny",
+        "app_store_version": 1
+    }
+}

@@ -6,3 +6,4 @@ myenv
 tensor-flow
 /myenv
 /tensor-flow/tfexample
+/shiny-venv
