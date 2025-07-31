@@ -1,0 +1,25 @@
+---
+title: "Bond Risk Premium ANN"
+jupyter: python3
+---
+
+```{python}
+#| echo: false
+import datetime
+today = datetime.date.today()
+today = today.strftime("%B %d, %Y")
+```
+
+This is a project by Ian Bates last updated  `{python} today`.
+
+
+## Introduction
+
+
+## Modeling 
+
+
+## Report
+
+
+## Presentation

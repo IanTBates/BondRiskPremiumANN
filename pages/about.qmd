@@ -1,0 +1,5 @@
+---
+title: "About"
+---
+
+This site serves as a central platform for accessing all components of this project: Modeling App, PDF Report, and Presentation.

@@ -1,0 +1,25 @@
+---
+title: "How"
+---
+
+This is a Quarto website.
+
+
+# References
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+The project used tensorflow for the ANN modeling, <https://www.tensorflow.org/tutorials/keras/regression>.
+
+The projcet used the shiny posit package in python to code the modeling application <https://shiny.posit.co/r/getstarted/shiny-basics/lesson1/>.
+
+Used Quarto for writing the report <https://quarto.org/docs/output-formats/pdf-basics.html> and <https://github.com/nmfs-opensci/quarto_titlepages/blob/main/README.md>.
+
+# Data Sources
+- Bloomberg
+- FRED Economic Data
+
+# Packages
+- numpy
+- pandas
+- shiny
+- tensorflow 

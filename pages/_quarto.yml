@@ -1,0 +1,26 @@
+project:
+  type: website
+  output-dir: ../docs
+website:
+  title: "Bond Risk Premium ANN"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - shinyapp.qmd
+      - report.qmd
+      - presentation.qmd
+      - about.qmd
+      - how.qmd
+
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+
+
+
