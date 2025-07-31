@@ -1,6 +1,5 @@
 .venv/
 __pycache__/
 *.pyc
-myenv
-Bloomberg Values.csv
-tensor-flow/tfexample
+/myenv
+/tensor-flow/tfexample

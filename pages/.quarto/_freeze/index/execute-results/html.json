@@ -1,0 +1,12 @@
+{
+  "hash": "01730ba66caceafd90d25dcc374f0bcc",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Bond Risk Premium ANN\"\njupyter: python3\n---\n\n\n\nThis is a project by Ian Bates last updated  July 18\\, 2025.\n\n\n## Introduction\n\n\n## Modeling \n\n\n## Report\n\n\n## Presentation\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}
